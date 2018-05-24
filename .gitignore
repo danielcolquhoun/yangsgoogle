@@ -2,6 +2,7 @@
 build/
 dist/
 yangsgoogle.egg-info/
+log/
 
 # virtualenv directories
 venv.dir/

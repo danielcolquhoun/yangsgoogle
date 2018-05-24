@@ -3,8 +3,8 @@ from setuptools import setup, find_packages
 setup(
     name='yangsgoogle',
     version='0.0.1',
-    description='Google API',
-    long_description='Google API',
+    description='Google API Wrapper',
+    long_description='Google API Wrapper',
     keywords=['util', 'google'],
     license='MIT',
     python_requires='>=3.5',
@@ -12,7 +12,8 @@ setup(
     author_email='seiren87dev@gmail.com',
     url='https://github.com/seiren87/yangsgoogle',
     install_requires=[
-        'google-api-python-client==1.6.7'
+        'google-api-python-client==1.6.7',
+        'yangsutil==0.1.0'
     ],
     packages=find_packages(
         exclude=['test*']
@@ -20,7 +21,7 @@ setup(
     zip_safe=False,
     entry_points={
         'console_scripts': [
-            'yangsgoogle_generator=yangsmeta.generator:main',
+            'yangsgoogle=yangsgoogle.generator:main',
         ],
     },
     classifiers=[

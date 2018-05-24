@@ -1,0 +1,1 @@
+from tests.credentials.manager import CredentialManagerTestCase
