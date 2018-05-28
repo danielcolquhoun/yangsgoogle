@@ -18,8 +18,8 @@ SERVICE = {
 
 
 class YangsGoogleMail:
-    def __init__(self, app_name, user_name, credential_root):
-        self.logger = LogUtil.get_logger(app_name=app_name)
+    def __init__(self, app_name, user_name, credential_root, logger=None):
+        self.logger = LogUtil.get_logger(app_name=app_name) if logger is None else logger
 
         self.service = CredentialManager(logger=self.logger).service(
             service_name=ServiceMap.GMAIL,
